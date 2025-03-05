@@ -38,6 +38,12 @@ class Contact {
 	public List<PhonebookEntry> getPhonebookEntry() {
 		return numbers;
 	}
+	public String getName() {
+		return name;
+	}
+	public int compareTo(Contact x) {
+		return name.compareTo(x.getName());
+	}
 	
 	 
 

@@ -15,7 +15,9 @@ public class TestHarness {
 
 	public static void main(String[] args) throws InterruptedException {
 		init();
-		
+		phonebookHander = new PhonebookHandler(phonebook);
+		List<Contact> sortedContacts = TEST_Sort(phonebookHander);
+		phonebookHander.display(sortedContacts);
 		//TODO: 2 cases:
 		//display non equality using your overriden equals method
 		//display equality using your overriden equals method
