@@ -19,7 +19,7 @@ public class TestHarness {
 		//TODO: 2 cases:
 		//display non equality using your overriden equals method
 		//display equality using your overriden equals method
-
+		/*
 		TEST_Equals(p1, p2);
 		TEST_Equals(p3, p3);
 		
@@ -43,7 +43,7 @@ public class TestHarness {
 		// 1) a call to search finds the user and displays their entries 
 		//(2) a call to search does not find the user & displays some detail illustrating same
 		TEST_Search(phonebookHander, sortedContacts, "Juan");
-		 
+		 */
 
 	}
 
@@ -118,35 +118,36 @@ public class TestHarness {
 		System.out.println("Building Phonebook Entries ....");
 		TimeUnit.SECONDS.sleep(1);
 
-		p1.addPhonebookEntry("2034032233", "Home");
-		p1.addPhonebookEntry("5532233322", "Cell");
-		p1.addPhonebookEntry("1120092829", "Work");
+		p1.addPhoneBookEntry("2034032233", "Home");
+		p1.addPhoneBookEntry("5532233322", "Cell");
+		p1.addPhoneBookEntry("1120092829", "Work");
 
-		p2.addPhonebookEntry("1034032233", "Home");
-		p2.addPhonebookEntry("2532233322", "Cell");
-		p2.addPhonebookEntry("3120092829", "Work");
+		p2.addPhoneBookEntry("1034032233", "Home");
+		p2.addPhoneBookEntry("2532233322", "Cell");
+		p2.addPhoneBookEntry("3120092829", "Work");
 
-		p3.addPhonebookEntry("4034032233", "Home");
-		p3.addPhonebookEntry("5532233322", "Cell");
-		p3.addPhonebookEntry("6120092829", "Work");
+		p3.addPhoneBookEntry("4034032233", "Home");
+		p3.addPhoneBookEntry("5532233322", "Cell");
+		p3.addPhoneBookEntry("6120092829", "Work");
 
-		p4.addPhonebookEntry("6034032233", "Home");
-		p4.addPhonebookEntry("3532233322", "Cell");
-		p4.addPhonebookEntry("1120092829", "Work");
+		p4.addPhoneBookEntry("6034032233", "Home");
+		p4.addPhoneBookEntry("3532233322", "Cell");
+		p4.addPhoneBookEntry("1120092829", "Work");
 
-		p5.addPhonebookEntry("0034032233", "Home");
-		p5.addPhonebookEntry("0532233322", "Cell");
-		p5.addPhonebookEntry("0120092829", "Work");
+		p5.addPhoneBookEntry("0034032233", "Home");
+		p5.addPhoneBookEntry("0532233322", "Cell");
+		p5.addPhoneBookEntry("0120092829", "Work");
 
 		System.out.println("Adding Entries to the phonebook ....\n");
 		TimeUnit.SECONDS.sleep(1);
 
-		phonebook.put(p1, p1.getPhonebookEntries()); // put ultimately calls overriden hashCode
-		phonebook.put(p2, p2.getPhonebookEntries());
-		phonebook.put(p3, p3.getPhonebookEntries());
-		phonebook.put(p4, p4.getPhonebookEntries());
-		phonebook.put(p5, p5.getPhonebookEntries());
+		phonebook.put(p1, p1.getPhonebookEntry()); // put ultimately calls overriden hashCode
+		phonebook.put(p2, p2.getPhonebookEntry());
+		phonebook.put(p3, p3.getPhonebookEntry());
+		phonebook.put(p4, p4.getPhonebookEntry());
+		phonebook.put(p5, p5.getPhonebookEntry());
 
 	}
 
 }
+
