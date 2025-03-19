@@ -25,6 +25,11 @@ class PhonebookEntry{
 	public String getPhoneNumber() {
 		return number;
 	}
+	
+	@Override
+	public String toString() {
+		return type + ":" +number;
+	}
  
 }
 	

@@ -44,6 +44,19 @@ class Contact {
 	public int compareTo(Contact x) {
 		return name.compareTo(x.getName());
 	}
+	public String toString() {
+		String s="";
+		s+=("Name: "+name+", Phone Numbers: [");
+		for(int i=0;i<=numbers.size()-1;i++) {
+			s+=numbers.get(i).toString();
+			if(i<numbers.size()-1) {
+				s+=(",");
+			}
+		}
+		s+=("]");
+		return s.toString();
+		
+	}
 	
 	 
 
