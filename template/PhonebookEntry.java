@@ -17,6 +17,14 @@ class PhonebookEntry{
 		this.type = type;
 		this.number = number;
 	}
+	
+	public String getType() {
+		return type;
+	}
+	
+	public String getPhoneNumber() {
+		return number;
+	}
  
 }
 	

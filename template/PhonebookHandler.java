@@ -41,6 +41,26 @@ public class PhonebookHandler implements iPhonebookHander{
 	@Override
 	public List<PhonebookEntry> binarySearch(List<Contact> sortedContacts, String name) {
 		// TODO Auto-generated method stub
+		int low = 0;
+		int high = sortedContacts.size()-1;
+		while(low <= high) {	
+			int mid = (low+high)/2;
+			Contact midContact = sortedContacts.get(mid);
+			
+			int comparison = midContact.getName().compareTo(name);
+			
+			if(comparison == 0) {
+				return phonebook.get(midContact);
+			}
+			else if(comparison < 0){
+				low = mid + 1;
+			}
+			else {
+				high = mid - 1;
+			}
+		
+		}
+			
 		return null;
 	}
 
