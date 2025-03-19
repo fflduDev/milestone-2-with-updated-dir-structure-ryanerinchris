@@ -16,8 +16,8 @@ public class TestHarness {
 	public static void main(String[] args) throws InterruptedException {
 		init();
 		phonebookHander = new PhonebookHandler(phonebook);
+		
 		List<Contact> sortedContacts = TEST_Sort(phonebookHander);
-		phonebookHander.display(sortedContacts);
 		//TODO: 2 cases:
 		//display non equality using your overriden equals method
 		//display equality using your overriden equals method
@@ -29,8 +29,8 @@ public class TestHarness {
 		//display hashcode case that demonstrates collision
 		//display hashcode case that demonstrates non- collision
 		
+		TEST_hashcode(p4, p1);
 		TEST_hashcode(p1, p3);
-		TEST_hashcode(p2, p3);
 		
 		//Create the phonebook handler
 		phonebookHander = new PhonebookHandler(phonebook);
@@ -38,6 +38,8 @@ public class TestHarness {
 		//TODO
 		//call 
 		//List<Contact> sortedContacts = TEST_Sort(phonebookHander);
+		System.out.println("Displaying Sorted Contacts");
+
 		TEST_Display(sortedContacts);
 		
 		//TODO

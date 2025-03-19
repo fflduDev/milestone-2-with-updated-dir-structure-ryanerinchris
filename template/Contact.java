@@ -50,12 +50,18 @@ class Contact {
 		for(int i=0;i<=numbers.size()-1;i++) {
 			s+=numbers.get(i).toString();
 			if(i<numbers.size()-1) {
-				s+=(",");
+				s+=(", ");
 			}
 		}
 		s+=("]");
 		return s.toString();
 		
+	}
+	@Override
+	public int hashCode() {
+		int hashValue =  (int) name.charAt(2);
+		
+		return hashValue;
 	}
 	
 	 

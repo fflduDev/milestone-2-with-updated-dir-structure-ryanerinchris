@@ -13,7 +13,7 @@ class PhonebookEntry{
 	String type;
 	String number;
 	
-	public PhonebookEntry(String type, String number) {
+	public PhonebookEntry(String number, String type) {
 		this.type = type;
 		this.number = number;
 	}
@@ -28,7 +28,7 @@ class PhonebookEntry{
 	
 	@Override
 	public String toString() {
-		return type + ":" +number;
+		return type + ": " +number ;
 	}
  
 }
